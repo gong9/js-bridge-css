@@ -1,9 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import bridge from 'js-bridge-css'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    bridge.jsToCss('.App', {
+      demo: 'yellow',
+    })
+  }, [])
 
   return (
     <div className="App">

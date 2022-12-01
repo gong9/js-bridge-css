@@ -36,6 +36,10 @@
   padding: 2em;
 }
 
+.card p {
+  color: var(--demo);
+}
+
 .read-the-docs {
   color: #888;
 }
